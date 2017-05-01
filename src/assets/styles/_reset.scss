@@ -1,0 +1,39 @@
+*, *:before, *:after{
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  line-height: 1.2;
+  color: $gray;
+}
+body, button, a, input {
+  font-family: $font-regular;
+}
+
+img {
+    max-width: 100%;
+    height: inherit;
+    vertical-align: top;
+}
+a, button, .btn {
+  text-decoration: none;
+  color: $blue;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button, a, .btn, input, .form-control {
+  &:focus, &:active{
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+strong{
+  font-family: $font-bold;
+}

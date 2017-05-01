@@ -1,0 +1,54 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome.scss";
+
+@import "variables";
+@import "fonts";
+@import "reset";
+
+
+.body {
+  background: linear-gradient(-27deg, rgba(#00f8ff,0.75) 30%, #2475c1 100%);
+  &-full-height {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+}
+
+.login {
+  min-height: 100%;
+  height: 100%;
+  padding: 20px;
+  .row{
+    margin: 0;
+    height: 100%;
+  }
+}
+.section {
+  &-right{ 
+    background: url('~/assets/images/dot-bg-jpg') repeat center center $white;
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: $font-medium;
+    letter-spacing: .05em;
+  }
+  &-s {
+    opacity: .6;
+    margin-left: -8px;
+  }
+  &-text {
+    display: block;
+    padding-left: 48px;
+    margin-top: -10px;
+  }
+}
